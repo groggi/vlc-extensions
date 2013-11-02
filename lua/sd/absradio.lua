@@ -32,8 +32,7 @@ function main()
             line = page:readline()
             last_element["category"] = string.match(line, ">([^<]*)")
         end
-
-        -- time for next line & next stream
+        
         line = page:readline()
     end
 end
