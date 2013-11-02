@@ -15,7 +15,6 @@ function main()
     line = page:readline()
     last_element = {}
     while line ~= nil do
-        -- search for title
         if string.match(line, "XSPF") then
             vlc.sd.add_item(last_element)
             last_element = {}
